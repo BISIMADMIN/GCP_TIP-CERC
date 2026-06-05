@@ -35,7 +35,7 @@ view: fact_encuesta {
     hidden: yes
   }
   dimension: sk_fecha_envio {
-    type: number
+    type: string
     sql: ${TABLE}.SK_FECHA_ENVIO ;;
     hidden: yes
   }
@@ -55,7 +55,7 @@ view: fact_encuesta {
     hidden: yes
   }
   dimension: sk_fecha_respuesta {
-    type: number
+    type: string
     sql: ${TABLE}.SK_FECHA_RESPUESTA ;;
     hidden: yes
   }
