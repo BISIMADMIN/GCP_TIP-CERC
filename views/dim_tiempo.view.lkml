@@ -51,6 +51,7 @@ view: dim_tiempo {
   dimension: sk_fecha {
     type: string
     sql: ${TABLE}.SK_FECHA ;;
+    hidden: yes
   }
   measure: count {
     type: count

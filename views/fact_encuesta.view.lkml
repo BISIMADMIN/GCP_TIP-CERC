@@ -19,6 +19,7 @@ view: fact_encuesta {
     convert_tz: no
     datatype: date
     sql: ${TABLE}.FCH_CARGA_DATO ;;
+    hidden: yes
   }
   dimension_group: fch_modificacion {
     type: time
@@ -26,38 +27,52 @@ view: fact_encuesta {
     convert_tz: no
     datatype: date
     sql: ${TABLE}.FCH_MODIFICACION ;;
+    hidden: yes
   }
   dimension: sk_encuesta {
     type: string
     sql: ${TABLE}.SK_ENCUESTA ;;
+    hidden: yes
   }
   dimension: sk_fecha_envio {
-    type: string
+    type: number
     sql: ${TABLE}.SK_FECHA_ENVIO ;;
+    hidden: yes
+  }
+  dimension: sk_fch_ocurrido {
+    type: number
+    sql: ${TABLE}.SK_FCH_OCURRIDO ;;
+    hidden: yes
   }
   dimension: sk_fecha_ocurrido {
-    type: string
+    type: number
     sql: ${TABLE}.SK_FECHA_OCURRIDO ;;
+    hidden: yes
   }
   dimension: sk_fecha_reporte {
-    type: string
+    type: number
     sql: ${TABLE}.SK_FECHA_REPORTE ;;
+    hidden: yes
   }
   dimension: sk_fecha_respuesta {
-    type: string
+    type: number
     sql: ${TABLE}.SK_FECHA_RESPUESTA ;;
+    hidden: yes
   }
   dimension: sk_oficina_atencion {
     type: string
     sql: ${TABLE}.SK_OFICINA_ATENCION ;;
+    hidden: yes
   }
   dimension: sk_oficina_emision {
     type: string
     sql: ${TABLE}.SK_OFICINA_EMISION ;;
+    hidden: yes
   }
   dimension: sk_reporte {
     type: string
     sql: ${TABLE}.SK_REPORTE ;;
+    hidden: yes
   }
   measure: count {
     type: count

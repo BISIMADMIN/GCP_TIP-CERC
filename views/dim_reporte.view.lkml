@@ -14,12 +14,14 @@ view: dim_reporte {
     timeframes: [raw, time, date, week, month, quarter, year]
     datatype: datetime
     sql: ${TABLE}.FCH_CARGA_DATO ;;
+    hidden: yes
   }
   dimension_group: fch_modificacion {
     type: time
     timeframes: [raw, time, date, week, month, quarter, year]
     datatype: datetime
     sql: ${TABLE}.FCH_MODIFICACION ;;
+    hidden: yes
   }
   dimension: marca_capufe {
     type: number
@@ -44,6 +46,7 @@ view: dim_reporte {
   dimension: sk_reporte {
     type: string
     sql: ${TABLE}.SK_REPORTE ;;
+    hidden: yes
   }
   measure: count {
     type: count

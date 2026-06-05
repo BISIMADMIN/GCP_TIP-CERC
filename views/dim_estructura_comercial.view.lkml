@@ -10,12 +10,14 @@ view: dim_estructura_comercial {
     timeframes: [raw, time, date, week, month, quarter, year]
     datatype: datetime
     sql: ${TABLE}.FCH_CARGA_DATO ;;
+    hidden: yes
   }
   dimension_group: fch_modificacion {
     type: time
     timeframes: [raw, time, date, week, month, quarter, year]
     datatype: datetime
     sql: ${TABLE}.FCH_MODIFICACION ;;
+    hidden: yes
   }
   dimension: gerente {
     type: string
@@ -32,14 +34,17 @@ view: dim_estructura_comercial {
   dimension: sk_agente {
     type: string
     sql: ${TABLE}.SK_AGENTE ;;
+    hidden: yes
   }
   dimension: sk_oficina_emision {
     type: string
     sql: ${TABLE}.SK_OFICINA_EMISION ;;
+    hidden: yes
   }
   dimension: sk_reporte {
     type: string
     sql: ${TABLE}.SK_REPORTE ;;
+    hidden: yes
   }
   dimension: subdireccion {
     type: string

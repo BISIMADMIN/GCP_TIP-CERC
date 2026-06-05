@@ -18,16 +18,19 @@ view: dim_encuesta {
     timeframes: [raw, time, date, week, month, quarter, year]
     datatype: datetime
     sql: ${TABLE}.FCH_CARGA_DATO ;;
+    hidden: yes
   }
   dimension_group: fch_modificacion {
     type: time
     timeframes: [raw, time, date, week, month, quarter, year]
     datatype: datetime
     sql: ${TABLE}.FCH_MODIFICACION ;;
+    hidden: yes
   }
   dimension: sk_tid {
     type: string
     sql: ${TABLE}.SK_TID ;;
+    hidden: yes
   }
   dimension: tipo_encuesta {
     type: string
