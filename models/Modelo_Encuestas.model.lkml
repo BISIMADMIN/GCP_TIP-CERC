@@ -51,4 +51,17 @@ explore: fact_encuesta {
     relationship: one_to_one
     type: left_outer
   }
+  join: dim_fecha_reporte {
+    from: dim_tiempo
+    sql_on: ${fact_encuesta.sk_fecha_reporte} = ${dim_tiempo.sk_fecha} ;;
+    relationship: one_to_one
+    type: left_outer
+  }
+  join: dim_fecha_ocurrido {
+    from: dim_tiempo
+    sql_on: ${fact_encuesta.sk_fecha_ocurrido} = ${dim_tiempo.sk_fecha} ;;
+    relationship: one_to_one
+    type: left_outer
+  }
+
 }
