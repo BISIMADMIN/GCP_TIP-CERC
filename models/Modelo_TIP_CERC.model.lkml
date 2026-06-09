@@ -39,6 +39,11 @@ explore: fact_tip_cerc {
     relationship: one_to_one
     type: left_outer
   }
+  join: dim_tiempo {
+    sql_on: ${fact_tip_cerc.sk_fecha_reporte} = ${dim_tiempo.sk_fecha} ;;
+    relationship: one_to_one
+    type: left_outer
+  }
   join: dim_fecha_reporte {
     from: dim_tiempo
     sql_on: ${fact_tip_cerc.sk_fecha_reporte} = ${dim_fecha_reporte.sk_fecha} ;;
