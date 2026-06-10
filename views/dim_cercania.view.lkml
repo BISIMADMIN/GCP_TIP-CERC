@@ -9,6 +9,7 @@
     dimension: sk_reporte {
       type: string
       sql: ${TABLE}.SK_REPORTE ;;
+      hidden: yes
     }
 
     dimension: tiempo_asignacion {
@@ -36,6 +37,7 @@
       timeframes: [raw, time, date, week, month, quarter, year]
       datatype: datetime
       sql: ${TABLE}.FCH_CARGA_DATO ;;
+      hidden: yes
     }
 
     dimension_group: fch_modificacion {
@@ -43,5 +45,6 @@
       timeframes: [raw, time, date, week, month, quarter, year]
       datatype: datetime
       sql: ${TABLE}.FCH_MODIFICACION ;;
+      hidden: yes
     }
   }

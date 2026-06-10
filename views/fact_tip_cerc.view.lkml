@@ -74,6 +74,7 @@ view: fact_tip_cerc {
   dimension: sk_reporte {
     type: string
     sql: ${TABLE}.SK_REPORTE ;;
+    hidden: yes
   }
 
   dimension: ajustador {
@@ -84,6 +85,7 @@ view: fact_tip_cerc {
   dimension: sk_ajustador {
     type: string
     sql: ${TABLE}.SK_AJUSTADOR ;;
+    hidden: yes
   }
 
   dimension_group: fch_carga_dato {
@@ -116,6 +118,7 @@ view: fact_tip_cerc {
   dimension: sk_oficina_emision {
     type: string
     sql: ${TABLE}.SK_OFICINA_EMISION ;;
+    hidden: yes
   }
 
   dimension: oficina_emision {
