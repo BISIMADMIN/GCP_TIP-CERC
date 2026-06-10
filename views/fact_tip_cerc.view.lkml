@@ -44,26 +44,31 @@ view: fact_tip_cerc {
   dimension: sk_fecha_reporte {
     type: string
     sql: ${TABLE}.SK_FECHA_REPORTE ;;
+    hidden: yes
   }
 
   dimension: sk_fecha_ocurrido {
     type: string
     sql: ${TABLE}.SK_FECHA_OCURRIDO ;;
+    hidden: yes
   }
 
   dimension: sk_fecha_asignacion {
     type: string
     sql: ${TABLE}.SK_FECHA_ASIGNACION ;;
+    hidden: yes
   }
 
   dimension: sk_fecha_arribo {
     type: string
     sql: ${TABLE}.SK_FECHA_ARRIBO ;;
+    hidden: yes
   }
 
   dimension: sk_fecha_termino {
     type: string
     sql: ${TABLE}.SK_FECHA_TERMINO ;;
+    hidden: yes
   }
 
   dimension: reporte {
