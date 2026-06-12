@@ -120,6 +120,11 @@ view: fact_tip_cerc {
     sql: ${TABLE}.FLG_RADIO ;;
   }
 
+  dimension: flg_motor {
+    type: number
+    sql: ${TABLE}.FLG_MOTOR ;;
+  }
+
   dimension: sk_oficina_emision {
     type: string
     sql: ${TABLE}.SK_OFICINA_EMISION ;;

@@ -32,6 +32,11 @@
       sql: ${TABLE}.FLG_RADIO ;;
     }
 
+    dimension: flg_motor {
+      type: number
+      sql: ${TABLE}.FLG_MOTOR ;;
+    }
+
     dimension_group: fch_carga_dato {
       type: time
       timeframes: [raw, time, date, week, month, quarter, year]
